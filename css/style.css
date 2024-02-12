@@ -1,0 +1,731 @@
+/* Beginning of Style Sheet */
+
+:root {
+	/*from darkest to lightest*/
+	--color1: #1b4332;
+	--color2: #2d6a4f;
+	--color3: #52b788;
+	--secondary-background: #e5e6e6;
+	--padding-top: 80px;
+}
+
+
+
+/* I was having an issue where my mobile would display with white space on the right, this seemed to be the only thing that fixed it */
+ html, body {
+	font-family: 'Quicksand', sans-serif;
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+h1, h3{
+	margin:0px;
+}
+
+h2 {font-size: 2em;}
+
+h3 {
+	font-weight: normal;
+}
+
+img {width: 100%;}
+
+/* TOP HEADER & MENU STYLES */
+#top h3 {font-weight: normal;}
+#top h1 {font-weight: normal;}
+
+#top {
+	background-color: var(--color1);
+	box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+	position: fixed;
+	width: 100%;
+	z-index: 3; /*just to be sure */
+}
+
+/* overriding the default ul styles */
+#top ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+/* override some anchor styles */
+#top ul a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+#top ul a:hover{
+	color: var(--color3);
+}
+
+#top .header-ciara a {
+	text-decoration:none;
+	color: white;
+	font-weight: bold;
+	letter-spacing: .5px;
+}
+/*positioning the name Heading1 to the left of the menu */
+#top .header-ciara {
+	float: left;
+	display: flex;
+	padding: 20px 20px;
+	
+}
+
+#top .menu {
+	clear: both;
+	max-height: 0px;
+	transition: max-height .2s ease-out;
+}
+
+#top .menu-button-container {
+	position: absolute;
+	right: 25px;
+	top: 35px;
+	cursor: pointer;
+}
+
+/*establishing our hamburger icon - this block will be the middle*/
+/*making the hamburger icon complicated because I wanted to make a cool animation */
+#top .menu-button-container .nav-icon {
+	background: var(--color3);
+	display: block;
+	height: 2px;
+	width: 20px;
+	position: relative;
+	transition: background .2s ease-out;
+}
+
+/*establishing the top line of our hamburger icon */
+#top .menu-button-container .nav-icon:before{
+	background: var(--color3);
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 5px;
+	transition: all .2s ease-out;
+}
+
+/*establishing the bottom of our hamburger icon*/ 
+#top .menu-button-container .nav-icon:after {
+	background: var(--color3);
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -5px;
+	transition: all .2s ease-out;
+}
+
+/*hide our checkbox */
+ #top .mobile-menu-trigger {display: none;}
+
+/*show our menu when the hamburger is checked */
+/*this is targetting the next available class named .menu when the menu is in the checked state */
+#top .mobile-menu-trigger:checked ~ .menu{
+	max-height: 300px;
+}
+
+/*making our little x animation */
+/*middle hamburger animation */
+#top .mobile-menu-trigger:checked ~ .menu-button-container .nav-icon {
+	background: transparent;
+}
+
+/*top burger animation */
+#top .mobile-menu-trigger:checked ~ .menu-button-container .nav-icon:before {
+	transform: rotate(-45deg);
+	top:0;
+}
+/*bottom burger animation */
+#top .mobile-menu-trigger:checked ~ .menu-button-container .nav-icon:after {
+	transform: rotate(45deg);
+	top:0;
+}
+
+/*SHOWCASE STYLES */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+
+#showcase {
+	height: 100vh;
+	padding-top: 80px;
+	background-image: url('../images/showcase-mobile.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display:flex;
+	flex-direction: row;
+}
+
+#showcase h1 {
+	color: white;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px #000;
+	
+}
+
+#showcase h2 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 3em;
+	margin: 5px 0 20px 0;
+	text-shadow: 1px 1px #000;
+}
+
+#showcase a{
+	text-decoration: none;
+	padding: 15px;
+	color: white;
+	font-size: 1.3em;
+	background-color: var(--color2);
+	transition: .3s;
+}
+/*hover for our "tell me more" box */
+#showcase a:hover {
+	background-color: var(--color3);
+}
+
+/*SKILLS STYLES */
+#skills {
+	padding-top: var(--padding-top);
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+	width: 85%;
+}
+
+
+#skills .boxes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#skills .box {
+	padding: 20px;
+}
+
+#skills  h3 {font-weight: normal;}
+
+#skills p {
+	text-align: justify;
+}
+
+#skills div.boxes div.box span.fa-stack.fa-2x {
+	padding: 10px;
+}
+
+#skills h3 {font-weight: bold;}
+#skills > h3{font-weight: normal;}
+
+/*PORTFOLIO STYLES */
+#portfolio {
+	padding-top: var(--padding-top);
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	background-color: var(--secondary-background);
+}
+
+.gallery-container {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1600px; /*make a max width so our user isn't working too hard to see all the projects */
+	margin: 10px;
+	
+}
+
+#portfolio .gallery-container .box {
+	background-color: white;
+	margin: 25px;
+	padding: 10px;
+}
+
+
+/*ABOUT ME Styles*/
+#about {
+	padding-top: var(--padding-top);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+	width: 95%;
+}
+/*images for mobile */
+#about img { 
+	max-width: 100px;
+	border: 5px solid var(--color3);
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	
+}
+#about h3 {
+	margin-bottom: 80px;
+}
+
+#about h4 {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+#about p {
+	margin-top: 5px;
+}
+
+/*making our little line down the middle */
+#about .about-image-container::before{
+position: absolute;
+width: 2px;
+background-color: var(--color3);
+content: ' ';
+height: 100%;
+left: 50%;
+z-index: -1;
+}
+
+/*mobile row stylings */	
+#about .timeline-row-left {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-right: 20px;
+}
+#about .timeline-row-right {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+#about .about-item-description {
+	width: 66.6666%;
+	text-align: left;
+	
+}
+
+#about .about-image-container {
+		width: 33.333333%;
+		position: relative;
+		height: 30vh;
+}
+	
+
+
+/*CV STYLES */
+
+
+#cv > h3:nth-child(2){
+	border: none;
+	padding-bottom: 30px;
+}
+
+#cv img {
+	border-radius: 50%;
+	border: 5px solid var(--color3);
+	aspect-ratio: 1/1;
+	width: 300px;
+}
+
+#cv {
+	background-color: var(--secondary-background);
+	padding-top: var(--padding-top);
+}
+
+#cv .cv-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 85%;
+	padding-bottom: 80px;
+}
+
+#cv ul {
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+}
+
+#cv ul li {
+	padding: 3px;
+}
+
+#cv h5 {
+	margin: 5px 0px 5px 0px;
+	font-size: 1em;
+}
+
+#cv .cv-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#cv .cv-right {
+	display: flex;
+	flex-direction: column;
+
+}
+
+#cv .social-media-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+/*color our fontawesome icons */
+.fa-stack {
+color:var(--color3);
+}
+
+
+#cv .cv-container h3 {
+	font-weight: bold;
+	text-align: left;
+	padding-bottom: 10px;
+	font-size: 1.5em;
+}
+#cv p, dl {
+	text-align: left;
+}
+
+#cv h3 {
+	border-bottom: 2px solid #aaa;
+}
+
+#cv dt {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#cv dd {
+	margin-bottom: 5px;
+}
+
+
+
+
+/*CONTACT STYLES */
+
+#contact {
+	min-height: 100vh;
+	padding-top: var(--padding-top);
+	background-image: url('../images/contact-background-mobile.jpg');
+	background-size: cover;
+	color: white;
+}
+#contact .form-container {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+}
+
+#contact .form-left {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact .form-right {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input {
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	height: 40px;
+	
+}
+/*aligning our form in a column for mobile */
+#contact-inquiry {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content:center;
+	align-items: center;
+	
+}
+
+
+#contact input, textarea {
+	border-radius: 5px;
+	transition: .4s;
+	font-size: 1em;
+}
+
+/*setting hover animation*/
+#contact input:hover, textarea:hover {
+	background-color: var(--color2);
+	border: 1px solid var(--color3);
+	color: #fff;
+	font-size: 1.1em;
+}
+
+#contact textarea:focus, input:focus {
+	border: 3px solid var(--color3);
+	background-color: white;
+	color: var(--color1);
+	outline: 0;
+}
+
+#contact button {
+	display: flex;
+	height: 50px;
+	width: 150px;
+	margin-top: 15px;
+	background: var(--color2);
+	border: 0;
+	color: white;
+	transition: .4s;
+	align-items: center;
+	justify-content: center;
+	font-size: 1em;
+	border-radius: 5px;
+}
+
+#contact button:hover {
+	background-color: var(--color3);
+	font-size: 1.2em;
+}
+
+/*FOOTER STYLES */
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color1);
+
+}
+
+footer p {
+	margin-left: 10px;
+	color: white;
+}
+
+
+footer .social-media-icons {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-right: 10px;
+}
+
+
+
+
+/* DESKTOP/TABLET STYLES */
+@media (min-width: 768px) {
+	
+	/*aligning our menu items in a row */
+	#top li {
+		float: left;
+	}
+	
+	#top li a {
+		padding: 5px 10px;
+	}
+	/* moving menu items over and to the right */
+	#top .menu {
+	clear: none;
+	max-height: none;
+	position: absolute;
+	right: 15px;
+	top: 20px;
+}
+	
+	#top .menu-button-container {display: none;}
+	
+	/*Showcase styles */
+	
+	#showcase {
+		background-image: url('../images/showcase-md.jpg');
+	}
+	
+	#skills .boxes {
+		flex-direction: row;
+	}
+	
+	/*Portfolio Media Query Styles*/
+	
+	.gallery-container {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		flex-grow: 1;
+	}
+	
+	.gallery-container .box {
+		width: 300px;
+	}
+	
+	/*About Media Query Styles */
+	
+	#about {align-items: center;}
+	
+	#about  .timeline-row-left .about-item-description {
+		text-align: right;
+		width: 33%;
+	
+	}
+	
+	#about  .timeline-row-right .about-item-description {
+		text-align: left;
+		width: 33.3333%;
+	
+	}
+	
+	#about .timeline-row-left {
+		flex-direction: row;
+		justify-content: flex-start;
+		margin: 0;
+		
+	}
+	div.timeline-row-left:nth-child(3) {margin-top: 20px;}
+	
+	#about .timeline-row-right {
+		justify-content: flex-end;
+		margin: 0;
+		
+	}
+	
+	#about .about-image-container {
+		width: 33.333333%;
+		position: relative;
+		height: 20vh;
+	}
+	
+	#about img {
+		max-width: 175px;
+	}
+	
+	
+	
+
+
+	
+	
+	
+
+	
+	/*CV Media Query Styles */
+	
+	#cv .cv-container {
+		flex-direction: row;
+		
+	}
+	
+	#cv .cv-left {
+		margin-right: 50px;
+		width: 33.3333%
+	}
+	
+	#cv .cv-right {
+		margin-left: 50px;
+		width: 66.66666%;
+	}
+	
+	/*Contact Media Query Styles*/
+	
+	#contact .form-container {
+		flex-direction: row;
+	}
+	
+	#contact .form-left {
+		width: 50%;
+	}
+	
+	#contact .form-right {
+		width: 50%;
+	}
+	
+	#contact textarea {
+		height: 140px;
+		margin-left: 10px;
+	}
+	
+	#contact {
+		background-image: url('../images/contact-background-md.jpg');
+		background-size: cover;
+	}
+	
+	/*Footer media queries */
+	
+	footer {
+		justify-content: space-between;
+	}
+	footer p {margin-left: 20px;}
+	footer .social-media-icons {margin-right: 20px;}				
+}
+
+@media (min-width:992px) {
+	
+	#showcase {
+	background-image: url('../images/showcase.jpg');	
+	}
+	
+	#contact {
+		background-image: url('../images/contact-background-md.jpg');
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
