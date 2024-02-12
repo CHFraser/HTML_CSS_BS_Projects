@@ -1,0 +1,256 @@
+/*    font-family: 'Kdam Thmor Pro', sans-serif;
+
+     font-family: 'Open Sans', sans-serif;
+ */
+@import "compass/css3";
+
+:root{
+    --bg-color: #012650;
+    --bg-color-light:#00AEFF;
+    --light-blue: #00AEFF;
+    --orange:#ED6417;
+    --heading: 'Kdam Thmor Pro', sans-serif
+    
+
+}
+
+body{
+    background-color: var(--bg-color);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{font-size: 1.1em;}
+
+/*Hero Styles*/
+#top{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+}
+
+.fa-stack{
+    color:#ED6417
+}
+
+#top a{
+    color: white;
+}
+
+#top .navbar-nav a:hover{
+    background-color: rgba(211, 211, 211, 0.226);
+    border-radius: 10px;
+}
+nav {
+  background-image: linear-gradient(rgba(0,0,0,.4), rgba(255,255,255, 0));
+  backdrop-filter: blur(4px);
+   font-size: 1.4em;
+   text-shadow: 2px 1px #000;
+ }
+
+ .navbar-toggler{
+  border-color: white;
+  color: white;
+ }
+
+
+
+ .page-swap .btn {
+  background: var(--bg-color-light);
+  transition: .5s;
+ }
+ .page-swap .btn:hover {
+  background: orangered;
+ }
+
+
+#hero{
+    background-image: url('/images/images-bold/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    font-family:'Kdam Thmor Pro', sans-serif;
+    text-shadow: 1px 2px #000;
+}
+
+
+
+#hero .btn {
+    background: var(--orange);
+    color: #fff;
+    font-family:'Open Sans', sans-serif;
+    text-shadow:none;
+    border-radius: 0;
+    filter:brightness(95%);
+    transition: .2s ease-out;
+}
+
+#hero .btn:hover{
+   width: calc(182px + 5px);
+   filter: brightness(100%);
+}
+
+/*Skills Section*/
+
+#skills{
+  background-image: url('/images/images-bold/skills-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 2px 2px #000;
+  border-top: 10px solid black;
+  border-bottom: 15px solid black;
+}
+
+#skills h2, #skills h3, .technical{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#skills .fa-stack {
+  color:#00000000;
+  border: 2px solid white;
+  border-radius: 50%;
+  
+}
+
+
+#skills .skills-box {
+  border-top: 2px solid white;
+}
+
+#skills .skill-description p{
+  border-left: 2px solid white;
+}
+
+/*Technical Skills CSS*/
+.technical {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+   
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+
+  /*Portfolio*/
+  #portfolio{
+    background: url('/images/images-bold/pf-bg.png') no-repeat;
+    background-size: cover;
+
+  }
+  #portfolio h2 { font-family: var(--heading);}
+  #portfolio .card{
+    color: var(--bg-color);
+  }
+
+  #portfolio .card-title {
+    font-family: var(--heading);
+  }
+
+  #portfolio .portfolio-header {
+    background-color: #15589b;
+    border-bottom: 5px solid var(--light-blue);
+  }
+
+  #portfolio .portfolio-projects-container, #portfolio .pf-description {
+    background: #405275;
+  }
+  
+
+
+
+
+/*About*/
+
+#about {
+  background-image: url('/images/images-bold/about-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 2px 2px #000;
+  border-top: 10px solid black;
+}
+#about .about-image-container::before{
+  position: absolute;
+  width: 2px;
+  background-color: purple;
+  content: ' ';
+  height: 100%;
+  left: 50%;
+  z-index: -1;
+  }
+
+
+#about h2, #about h4 {
+  font-family: var(--heading);
+}
+
+#about .about-item-description {
+  background-color: #405275d8;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+#about .about-item-description h4 {
+  border-bottom: 2px solid white;
+}
+
+#about p {font-size: 1.2em;}
+  
+
+/*Resume Styles*/
+
+#resume {
+ background-image: url(/images/images-bold/resume-bg.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+
+#resume h2 {
+  font-family: var(--heading);
+}
+
+.resume-header {
+  font-family: var(--heading);
+}
+
+#resume .profile-blk {
+  background-color: #283347e0;
+  border-radius: 2px;
+}
+
+.resume-p-header{ 
+  font-weight: bold;
+  color:#00AEFF;
+  text-transform: uppercase;
+}
+
+#resume .contact-info {
+  background-color: #283347e0;
+  border-radius: 2px;
+}
+
+
+#resume .fa-stack, #footer .fa-stack {
+  color: var(--bg-color-light);
+  transition: .4s;
+}
+
+#resume .fa-stack:hover, #footer .fa-stack:hover {
+  color: var(--bg-color);
+  
+}
+
+
+

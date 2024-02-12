@@ -1,0 +1,262 @@
+
+@font-face {
+    font-family: 'Bildad';
+    src: url('/images/assets/bildad-webfont.woff'),
+         url('..images/assets/bildad-webfont.woff2')   ;
+}
+
+:root {
+    --beige: #D2C8AE;
+    --crimson:#660000;
+    --scarlet: #800000;
+    --dark-grey: #363838;
+}
+
+
+body{
+    font-family: 'PT Serif', serif;
+    background-color: #000;
+    color:#D2C8AE;
+}
+
+
+
+h1, h2{
+    font-family: 'Bildad';
+}
+
+h3, h4, h5 {
+  font-family: "exocet", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/*Top Styles*/
+
+#top .navbar-nav a{
+    color: var(--beige);
+    transition: .4s;
+}
+#top .navbar-nav a:hover {
+    color: var(--scarlet);
+}
+nav {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(255,255,255, 0));
+    font-family: "exocet", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    backdrop-filter: blur(4px);
+     font-size: 1.4em;
+   }
+
+   #top .navbar-toggler{
+    color: var(--beige);
+   }
+
+ #top nav .navbar-brand{
+    color: var(--beige);
+}
+
+
+/* Hero Styles */
+#hero {
+    background-image: url('/images/images-dark/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#hero {
+    color:#D2C8AE;
+    text-shadow: 2px 2px #000;
+}
+
+#hero h2 {
+    font-style: italic;
+    font-family: "exocet", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  
+}
+
+#hero .btn {
+    background-image: url('/images/images-dark/hero-btn.jpg');
+    /*<a href="https://www.freepik.com/free-photo/dark-grunge-background-ideal-use-as-halloween-design_17560876.htm#query=red%20gothic%20background&position=4&from_view=keyword&track=ais&uuid=edb85bff-e042-4fc2-8314-4f0e2adbbce3">Image by kjpargeter</a> on Freepik*/
+    background-repeat: no-repeat;
+    background-size: 200px;
+    color: #D2C8AE;
+    border: 2px outset #D2C8AE;
+    transition: .4s;
+    filter: brightness(75%);
+}
+
+#hero .btn:hover {
+    color:#fdf1d2;
+    border: 2px outset #D2C8AE;
+    filter: brightness(100%);
+}
+
+#top .btn {
+  background-image: url('/images/images-dark/hero-btn.jpg');
+  /*<a href="https://www.freepik.com/free-photo/dark-grunge-background-ideal-use-as-halloween-design_17560876.htm#query=red%20gothic%20background&position=4&from_view=keyword&track=ais&uuid=edb85bff-e042-4fc2-8314-4f0e2adbbce3">Image by kjpargeter</a> on Freepik*/
+  background-repeat: no-repeat;
+  background-size: 200px;
+  color: #D2C8AE;
+  border: 2px outset #D2C8AE;
+  transition: .4s;
+  filter: brightness(75%);
+}
+
+#top .btn:hover {
+  color:#fdf1d2;
+  border: 2px outset #D2C8AE;
+  filter: brightness(100%);
+}
+/*Skills Styles*/
+
+#skills {
+    background-image:  url('/images/images-dark/skills-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px #000;
+    border-top: 10px solid black;
+    border-bottom: 15px solid black;
+}
+
+#skills .flex-sm-row {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+  }
+
+  #skills .fa-stack {
+    color: var(--crimson);
+  }
+
+  
+ .technical {
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+  }
+
+  /*Portfolio Styles*/
+
+  #portfolio{
+    background-image: url('/images/images-dark/portfolio-bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #portfolio h2 {
+    text-shadow: 2px 2px #000;
+  }
+
+  #portfolio h3 {
+    text-shadow: 2px 2px #000;
+    font-family: "exocet", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /* Card image styling CSS*/
+  #portfolio img {
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: var(--beige); /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    
+    transition: .3s;
+  }
+  #portfolio img:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+
+  #portfolio .card {
+    color: var(--beige);
+    background-color: rgb(44, 44, 44);
+  }
+  /* -- card image styling end -- */
+
+/*About Me Styles*/
+
+#about {
+    background-image: url('/images/images-dark/about-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    text-shadow: 2px 2px #000;
+    border-top: 10px solid black;
+}
+#about .about-image-container::before{
+    position: absolute;
+    width: 2px;
+    background-color: var(--scarlet);
+    content: ' ';
+    height: 100%;
+    left: 50%;
+    z-index: -1;
+    }
+#about .about-image-container{
+        z-index: 2;
+      }
+#about img {
+    border: 2px solid var(--scarlet);
+}      
+
+#about h3 {font-family: "exocet", sans-serif;
+  font-weight: 500;
+  font-style: normal;}
+
+#about h4 {font-family: 'Bildad';}
+
+/*Resume*/
+#resume {
+    background-image: url('/images/images-dark/resume-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top: 10px solid black;
+    text-shadow: 2px 2px #000;
+    
+  }
+
+  #resume h3 {font-family: "exocet", sans-serif;
+    font-weight: 500;
+    font-style: normal;}
+    
+  .profile{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+  }
+
+  #resume .fa-stack {
+    color: var(--scarlet);
+    transform: .4s;
+  }
+
+  #resume .fa-stack:hover {
+    color: var(--crimson)
+  }
+
+  /*Footer*/
+
+  #footer .fa-stack {
+    color: var(--scarlet)
+  }
+  #footer .fa-stack:hover {
+    color: var(--crimson)
+  }
+

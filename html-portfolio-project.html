@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Ciara Fraser">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+   <title>HTML/CSS Portfolio | Ciara Fraser</title>
+   </head>
+   <body>
+   <!-- your body goes here -->
+   <!-- TOP SECTION STARTS HERE -->
+		<header id="top">
+			<nav>
+				<h1 class="header-ciara"><a href="#showcase">CIARA FRASER</a></h1>
+				<input class="mobile-menu-trigger" type="checkbox" id="mobile-menu-trigger">
+				<label class="menu-button-container" for="mobile-menu-trigger"><span class="nav-icon"></span></label>
+				<ul class="menu">
+					<li><h3><a href="#skills">SKILLS</a></h3></li>
+					<li><h3><a href="#portfolio">PORTFOLIO</a></h3></li>
+					<li><h3><a href="#about">ABOUT</a></h3></li>
+					<li><h3><a href="#cv">CURRICULUM VITAE</a></h3></li>
+					<li><h3><a href="#contact">CONTACT</a></h3></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- SHOWCASE STARTS HERE -->
+		<section id="showcase">
+			<div class="container">
+				<h1>Ciara Fraser</h1>
+				<h2>Interactive Media Development Student</h2>
+				<a href="#skills">TELL ME MORE</a>
+			</div>	
+		</section>
+		<!-- SKILLS STARTS HERE -->
+		<section id="skills">
+			<h2>SKILLS</h2>
+			<h3>Ever-growing as I continue on my IMD journey.</h3>
+				<div class="boxes">	
+					<div class="box">
+						<span class="fa-stack fa-2x" style="color:var(--color3);">
+						<i class="fa-solid fa-circle fa-stack-2x"></i>
+						<i class="fa-solid fa-network-wired fa-stack-1x fa-inverse"></i>
+						</span>
+						<h3>Web Technologies</h3>
+						<p>I am proficient in HTML and CSS. I am currently acquiring skills in Bootstrap, and later, SQL. I have made 2 websites prior to this one. I am also familiar with Wordpress. I am looking into acquiring knowledge in PHP.</p>
+					</div>
+					<div class="box">
+						<span class="fa-stack fa-2x" style="color:var(--color3);">
+						<i class="fa-solid fa-circle fa-stack-2x"></i>
+						<i class="fa-solid fa-desktop fa-stack-1x fa-inverse"></i>
+						</span>
+						<h3>Programming</h3>
+						<p>I am currently developing skills in the object-oriented programming language, C#. I have developed small programs, such as circumference calculators, and other text-based programs. I plan to learn Python once I finish my diploma.</p>
+					</div>
+					<div class="box">
+						<span class="fa-stack fa-2x" style="color:var(--color3);">
+						<i class="fa-solid fa-circle fa-stack-2x"></i>
+						<i class="fa-solid fa-face-smile fa-stack-1x fa-inverse"></i>
+						</span>
+						<h3>Soft Skills</h3>
+						<p>I have developed a plethora of soft skills from my previos job experiences. I am proficient with verbal and written communication, and I always attack problems with a user-centered approach.</p>
+					</div>
+				</div>										
+		</section>
+		<!-- PORTFOLIO STARTS HERE -->
+		<section id="portfolio">
+			<h2>PORTFOLIO</h2>
+			<h3>A collection of projects from my first semester in IMD. To be updated as I create more!</h3>
+			<div class="gallery-container">
+				<div class="box">
+					<a href="https://ciara.144.compsci.cc/lab-4/"><img src="./images/form.jpg" alt="thumbnail of html contact form"></a>
+					<h3>HTML Contact Form</h3>
+					<p>Here is an example of a simple contact form using HTML. </p>
+				</div>
+				<div class="box">
+					<a href="https://ciara.144.compsci.cc/lab-6/"><img src="./images/flexbox.jpg" alt="thumbnail of flex box containers"></a>
+					<h3>Flex Boxes</h3>
+					<p>An example of several different flexbox arrangements.</p>
+				</div>
+				<div class="box">
+					<a href="https://ciara.144.compsci.cc/lab-5/"><img src="./images/responsive.jpg" alt="thumbnail of a responsive webpage "></a>
+					<h3>Responsive Webpage</h3>
+					<p>An example of a responsive webpage using HTML and CSS.</p>
+				</div>
+				<div class="box">
+					<img src="https://fakeimg.pl/400x400/cccccc/cccccc" alt="a grey square representing a project placeholder">
+					<h3>WIP</h3>
+					<p>To be updated as new projects wrap up!</p>
+				</div>
+				<div class="box">
+					<img src="https://fakeimg.pl/400x400/cccccc/cccccc" alt="a grey square representing a project placeholder">
+					<h3>WIP</h3>
+					<p>To be updated as new projects wrap up!</p>
+				</div>
+				<div class="box">
+					<img src="https://fakeimg.pl/400x400/cccccc/cccccc" alt="a grey square representing a project placeholder">
+					<h3>WIP</h3>
+					<p>To be updated as new projects wrap up!</p>				
+				</div>
+			</div>
+			
+		
+		</section>
+		<!-- ABOUT STARTS HERE -->
+		<section id="about">
+			<h2>ABOUT ME</h2>
+			<h3>Here is a little background about me, and what brought me to this point.</h3>
+			
+				<div class="timeline-row-left">
+					<div class="about-item-description">
+						<h4>2011-2015</h4>
+						<h4>Passion for Design Began</h4>
+						<p>In highschool, I took a series of classes that taught me several Adobe programs, as well as GameMaker. In highschool, I was a part of the yearbook club, which required me to design yearbook pages using InDesign and Illustrator, and my passion for design was born.</p>
+					</div>
+					<div class="about-image-container">
+						<img src="./images/yearbook.jpg" alt="row of books">
+						<!--Photo by <a href="https://unsplash.com/@kimberlyfarmer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kimberly Farmer</a> on <a href="https://unsplash.com/photos/shallow-focus-photography-of-books-lUaaKCUANVI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+					</div>
+				</div>
+				<div class="timeline-row-right">
+				<div class="about-image-container">
+						<img src="./images/writing.jpg" alt="A fountain pen resting on a notebook">
+						<!--Photo by <a href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Burden</a> on <a href="https://unsplash.com/photos/fountain-pen-on-spiral-book-xG8IQMqMITM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>--> 
+					</div>
+					<div class="about-item-description">
+						<h4>2015-2020</h4>
+						<h4>A Little Lost</h4>
+						<p>After graduating, I jumped straight into college and take a slew of creative writing courses. I enjoyed this, but my heart was not in it. I decided to take a break from school to figure out what I wanted to do with my life. .</p>
+					</div>
+					
+				</div>
+				<div class="timeline-row-left">
+					<div class="about-item-description">
+						<h4>2020-2022</h4>
+						<h4>Choosing a Course</h4>
+						<p>After the first wave of the pandemic, I decided I needed a job that was more stable than what I was currently doing. In May of 2020, I decided to back to college to pursue a certificate in Office Administration.</p>
+					</div>	
+					<div class="about-image-container">
+						<img src="./images/taxes.jpg" alt="tax papers on a desk">
+						<!--Photo by <a href="https://unsplash.com/@kellysikkema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kelly Sikkema</a> on <a href="https://unsplash.com/photos/white-printed-paper-8DEDp6S93Po?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+					</div>
+				</div>
+				<div class="timeline-row-right">
+				<div class="about-image-container">
+						<img src="./images/locker.jpg" alt="">
+						<!--Photo by <a href="https://unsplash.com/@moren?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">moren hsu</a> on <a href="https://unsplash.com/photos/assorted-color-lockers-VLaKsTkmVhk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>--> 
+					</div>
+				
+					<div class="about-item-description">
+						<h4>2022-Present</h4>
+						<h4>Choosing the Right Course</h4>
+						<p>In 2022, I finally discovered the course of my dreams, so I applied to Camosun to partake in the Interactive Media Developer Program, and am thouroughly enjoying it!</p>
+					</div>		
+				</div>
+				<div class="about-image-container about-image-last">
+						<img src="./images/your-next-hire.jpg" alt="Your next hire">
+					</div>
+		</section>
+		<!-- CV STARTS HERE -->
+		<section id="cv" class="container">
+			<h2>CURRICULUM VITAE</h2>
+			<h3>Find below the most recent copy of my CV.</h3>
+			<div class="cv-container">
+				<div class="cv-left"> 
+					<img src="./images/headshot.jpg" alt="">
+					<h2>Ciara Fraser</h2>
+					<ul>
+						<li>ciarahfraser@outlook.com</li>
+						<li>778-679-8000</li>
+						<li>Victoria, BC</li>
+					</ul>
+					<ul class="social-media-icons">
+						<li>
+							<a href="https://www.linkedin.com/in/ciarafraser/"><span class="fa-stack fa-1x">
+							<i class="fa-solid fa-circle fa-stack-2x"></i>
+							<i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
+							</span></a>
+						  </li>
+						<li>
+							<a href="#contact"><span class="fa-stack fa-x">
+							<i class="fa-solid fa-circle fa-stack-2x"></i>
+							<i class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
+							</span></a>
+						</li>
+						
+					</ul>
+					<h5>Technical Skills</h5>
+						<ul>
+							<li>HTML and CSS</li>
+							<li>Object Oriented Programming in C#</li>
+							<li>InDesign, Illustrator, Photoshop</li>
+							<li>AdobeXD and Figma</li>
+						</ul>
+					<h5>Personal Interests</h5>
+						<ul>
+							<li>Aerial Circus</li>
+							<li>Weightlifting</li>
+							<li>Video Games</li>
+						</ul>	
+				</div>
+				<div class="cv-right">
+					<h3>Profile</h3>
+						<p>I am an eager and motivated student in the Interactive Media Developer Program at Camosun College with experience in office administration and a strong foundation in programming and design. I am excited to see where all of these new skills take me. I am passionate about creating fun, innovative, and user-centered projects.</p>
+					<h3>Education</h3>
+						<dl>
+							<dt>Interactive Media Developer, Camosun College</dt>
+								<dd>Learning the fundamentals of web technologies and dynamic webpages using HTML, CSS, and Bootstrap</dd>
+								<dd>Creating text-based programs using C#</dd>
+								<dd>Understanding the user-centered mindset and progressing through the phases of Design Thinking using group work and low-fidelity prototyping</dd>
+						</dl>
+					<h3>Additional Courses & Training</h3>
+						<dl>
+							<dt>Certificate, Office Administration | 2021</dt>
+								<dd>Developed skills in Microsoft Word and Excel, business communications, filing and file management, and interpersonal development. </dd> 
+						</dl>
+					<h3>Work Experience</h3>
+						<dl>
+							<dt>Tax Administrator | Baker Tilly Victoria Ltd.</dt>
+								<dd>Assembled client tax packages and frequently protected confidentialclient information by following relevant procedures and using securecommunication and storage methods.</dd>
+								<dd>Managed tasks for 13 executive partners, including preparing various taxdocuments such as capital dividend elections</dd>
+								<dd>Worked within tight deadlines in a dynamic team environment.</dd>
+								<dd>Implemented procedures for the new Underused Housing taxintroduced in the 2022 tax year as a member of the tax team.</dd>
+						</dl>
+						
+				</div>
+			</div>
+		</section>
+		<!-- CONTACT STARTS HERE -->
+		<section id="contact" class="container">
+			<h2>CONTACT ME</h2>
+			<h3>Think I might be the right fit for your team? Fill out this form and I will get back to you within 24-48 hours!</h3>
+				<form id="contact-inquiry" method="post" action="https://144.compsci.cc/submit-form">
+				<div class="form-container">
+					<div class="form-left">
+						<input type="text" name="user-name" id="uname" placeholder="Your Name *" required>
+						<input type="email" name="user-email" id="uemail" placeholder="Your Email *" required>
+						<input type="tel" name="user-phone" id="uphone" placeholder="Your Phone *" required>
+					</div>
+					<div class="form-right">
+						<textarea name="comments" placeholder="Your Message *" rows="5" required></textarea>
+					</div>
+					</div>
+						<button type="submit" class="form-button">Send Message</button>
+					
+				</form>
+		</section>
+		<!-- FOOTER STARTS HERE -->
+		<footer>
+			<p>Copyright &copy; 2023 Ciara Fraser</p>
+			<ul class="social-media-icons">
+						<li>
+							<a href="https://www.linkedin.com/in/ciarafraser/"><span class="fa-stack fa-1x">
+							<i class="fa-solid fa-circle fa-stack-2x"></i>
+							<i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
+							</span></a>
+						  </li>
+						<li>
+							<a href="#contact"><span class="fa-stack fa-x">
+							<i class="fa-solid fa-circle fa-stack-2x"></i>
+							<i class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
+							</span></a>
+						</li>
+						
+					</ul>
+			
+		</footer>
+	
+   
+   </body>
+  
+  
+
+
+
+
+
+</html>
+<!-- Web Page Created by: Ciara Fraser -->

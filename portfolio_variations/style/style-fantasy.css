@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'lifecraftregular';
+  src: url('/images/assets/lifecraft/lifecraft_font-webfont.woff2') format('woff2'),
+       url('/images/assets/lifecraft/lifecraft_font-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+  /*https://www.dafont.com/lifecraft.font*/
+
+:root {
+    --deep-blue:#4c84ac;
+    --light-blue: #9FFCDF;
+    --light-green: #6CC551;
+    --deep-green: #447604;
+    --grey-green: #47624F;
+}
+
+body {
+     font-family: "semplicitapro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+p{font-size: 1.1em;}
+
+
+h1, h2, h4 {
+    font-family: 'lifecraftregular';
+ 
+}
+/*Top Styles*/
+
+#top a{
+    color: white;
+}
+
+
+#top .navbar-nav a:hover{
+    color: var(--deep-blue);
+    
+}
+
+nav .navbar-brand {
+  font-size: 1.3em;
+}
+
+nav {
+ background-image: linear-gradient(rgba(0,0,0,.4), rgba(255,255,255, 0));
+ backdrop-filter: blur(4px);
+  font-size: 1.4em;
+}
+
+.page-swap .btn {
+  background-color: var(--deep-blue);
+  filter:brightness(80%);
+  transition: .4s;
+}
+
+.page-swap .btn:hover {
+ filter:brightness(100%);
+}
+
+/* Hero Styles */
+#hero h2 {
+  font-family: "semplicitapro", sans-serif;;
+    font-style: italic;
+    text-shadow: 1px 1px #000;
+    
+    
+}
+#hero h1 {
+    text-transform: uppercase;
+    text-shadow: 1px 1px #000;
+}
+
+#hero .btn {
+  background: rgb(2,0,36);
+  background: var(--deep-blue);
+    border:  outset 2px var(--deep-blue) ;
+    text-shadow: 2px 2px #000;
+    color: #fff;
+    filter:brightness(85%);
+    transition: .4s;
+}
+
+#hero .btn:hover{
+  filter:brightness(100%);
+   
+}
+
+#hero {
+    background-image: url('/images/images-fantasy/hero-img-fantasy.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* SKills Styles */
+
+#skills {
+    background-image: url('/images/images-fantasy/skills-bg-fantasy.png');
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px #000;
+    border-top: 10px solid black;
+    border-bottom: 15px solid black;
+}
+
+#skills h2 {font-weight: bold;}
+
+#skills h3 {font-family: 'lifecraftregular';}
+
+
+#skills .flex-sm-row {
+    background-color: rgba(255  ,255 , 255, .2);
+    backdrop-filter: blur(2px);
+  }
+
+
+ #skills .fa-stack {
+    color: var(--deep-blue);
+ }   
+ 
+
+ .technical {
+   background-color:rgba(255  ,255 , 255, .2);
+   border-radius: 15px;
+   backdrop-filter: blur(4px);
+ }
+
+ .skills-img {
+  text-shadow: 2px 2px #000;
+  
+ }
+
+
+  /* Portfolio Styles */
+
+  #portfolio{
+    background-image: url('/images/images-fantasy/portfolio-bg-fantasy.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #portfolio h2 {
+    text-shadow: 2px 2px #000;
+    font-weight: bold;
+  }
+  #portfolio h3 {
+    text-shadow: 2px 2px #000;
+  }
+
+  #portfolio .card {
+    color: black;
+}
+
+  /* Card image styling CSS*/
+  #portfolio img {
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: var(--deep-blue); /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    
+    transition: .3s;
+  }
+  #portfolio img:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+  /* -- card image styling end -- */
+
+  /*About Styles */
+
+  #about {
+    background-image: url('/images/images-fantasy/about-me-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    text-shadow: 2px 2px #000;
+    border-top: 10px solid black;
+    
+  }
+  #about .about-item-description {
+    background-color: #4c84ac80;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+  }
+
+  #about h2 { font-weight: bold;
+  }
+
+  #about .about-image-container::before{
+    position: absolute;
+    width: 2px;
+    background-color: var(--deep-blue);
+    content: ' ';
+    height: 100%;
+    left: 50%;
+    z-index: -1;
+    }
+
+    #about .about-image-container{
+      z-index: 2;
+    }
+  
+/* Resume */
+
+#resume {
+  background-image: url('/images/images-fantasy/resume-fantasy-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-top: 10px solid black;
+  
+}
+
+#resume h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+}
+#resume h3 {
+  text-shadow: 2px 2px #000;
+}
+
+#resume .fa-stack {
+  color: var(--deep-blue);
+  transition: .4s;
+}
+
+#resume .resume-header {
+  font-family: 'lifecraftregular';
+  border-bottom: 2px solid rgba(255,255,255,.4);
+}
+
+#resume .fa-stack:hover{ color:#012650}
+
+.resume-headshot{
+  border: 3px solid var(--deep-blue);
+}
+
+.profile{
+  background-color: rgba(187, 187, 187, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 15px;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: rgb(1, 1, 26);
+}
+
+#footer .fa-stack {
+  color: var(--deep-blue);
+  transition: .4s;
+}
+#footer .fa-stack:hover{ color:#012650}
